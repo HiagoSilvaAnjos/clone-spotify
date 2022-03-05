@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* utility classes*/
+.btn-primary {
+    cursor: pointer;
+    background-color: #22cf6f;
+    color: #0f496d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 500px;
+    transition: transform;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: #24e67b;
+    transform: scale(1.05);
+}
+
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    background-color: #010001;
+    justify-content: center;
+}
+
+#navbar .navbar-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+#navbar .navbar-container .logo {
+    width: auto;
+    height: 40px;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar .navbar-container li {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+#navbar .navbar-container li:hover {
+    color: rgb(12, 214, 56);
+}
+
+/* item baixar */
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid #fff;
+    padding: 0 25px;
+}
+
+/* item inscreva-se */
+#navbar .navbar-container ul li:nth-child(4) {  
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+/* Showcase */
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url(../img/showcase.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2{
+    font-size: 6rem;
+}
+
+#showcase .showcase-container p{
+    margin: 15px 0px 40px 0px;
+    font-size: 1.1rem;
+}

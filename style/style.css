@@ -36,8 +36,6 @@ body {
 
 /* navbar */
 #navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
     display: flex;
     color: #fff;
@@ -65,7 +63,7 @@ body {
 }
 
 #navbar .navbar-container li:hover {
-    color: rgb(12, 214, 56);
+    color: #12c739;
 }
 
 /* item baixar */
@@ -89,7 +87,7 @@ body {
     align-items: center;
     color: #fff;
     background-image: url(../img/showcase.webp);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
@@ -122,15 +120,48 @@ body {
     width: 75%;
     margin: auto;
     justify-content: center;
+    padding: 90px 0px;
 }
 
 #footer .footer-content .footer-menu {
-    margin: 0pc 40px; 
+    margin: 0px 50px; 
+    list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+    cursor: pointer;
+    margin: 25px 0px;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+    color: #12c739;
 }
 
 #footer .footer-content .footer-menu p {
     font-weight: bold;
     text-transform: uppercase;
     color: #919496;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+.socials {
+    display: flex;
+    margin-left: 80px;
+}
+
+.socials-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 1.7rem;
+    width: 50px;
+    height: 50px;
+    background-color: #222226;
+}
+
+.socials-item:hover {
+    color: #12c739;
 }

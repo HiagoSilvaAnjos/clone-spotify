@@ -28,6 +28,12 @@ body {
     transform: scale(1.05);
 }
 
+.logo {
+    width: auto;
+    height: 40px;
+}
+
+
 /* navbar */
 #navbar {
     position: fixed;
@@ -45,11 +51,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
-}
-
-#navbar .navbar-container .logo {
-    width: auto;
-    height: 40px;
 }
 
 #navbar .navbar-container ul {
@@ -108,4 +109,28 @@ body {
 #showcase .showcase-container p{
     margin: 15px 0px 40px 0px;
     font-size: 1.1rem;
+}
+
+/* Footer */
+#footer {
+    background: black;
+    color: white;
+}
+
+#footer .footer-content {
+    display: flex; 
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+#footer .footer-content .footer-menu {
+    margin: 0pc 40px; 
+}
+
+#footer .footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.9rem;
 }

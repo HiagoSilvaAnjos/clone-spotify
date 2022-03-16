@@ -11,8 +11,8 @@ body {
 /* utility classes*/
 .btn-primary {
     cursor: pointer;
-    background-color: #22cf6f;
-    color: #0f496d;
+    background-color: #1ec067;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
@@ -21,11 +21,11 @@ body {
     border-radius: 500px;
     transition: transform;
     letter-spacing: 1px;
+    transition: all 300ms ease;
 }
 
 .btn-primary:hover {
-    background-color: #24e67b;
-    transform: scale(1.05);
+    background-color: #00ff73;
 }
 
 .logo {
@@ -60,6 +60,7 @@ body {
 #navbar .navbar-container li {
     cursor: pointer;
     padding: 0 20px;
+    transition: all 350ms ease;
 }
 
 #navbar .navbar-container li:hover {
@@ -101,7 +102,7 @@ body {
 }
 
 #showcase .showcase-container h2{
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 #showcase .showcase-container p{
@@ -113,6 +114,7 @@ body {
 #footer {
     background: black;
     color: white;
+    padding: 90px 0px 60px 0px;
 }
 
 #footer .footer-content {
@@ -120,7 +122,6 @@ body {
     width: 75%;
     margin: auto;
     justify-content: center;
-    padding: 90px 0px;
 }
 
 #footer .footer-content .footer-menu {
@@ -128,9 +129,15 @@ body {
     list-style: none;
 }
 
+.footer-logo {
+    position: relative;
+    bottom: 25px;
+}
+
 #footer .footer-content .footer-menu .footer-menu-item {
     cursor: pointer;
     margin: 25px 0px;
+    transition: all 350ms ease;
 }
 
 #footer .footer-content .footer-menu .footer-menu-item:hover {
@@ -157,11 +164,60 @@ body {
     border-radius: 50%;
     margin: 0 10px;
     font-size: 1.7rem;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     background-color: #222226;
+    transition: all 350ms ease;
 }
 
 .socials-item:hover {
     color: #12c739;
+}
+
+/* footer info */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    width: 75%;
+    padding-top: 70px;
+    margin:auto;
+    font-weight: bold;
+    color: #919496;     
+    font-size: 0.75rem;
+}
+
+.footer-info .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+    margin: 0 15px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover {
+    color: #12c739;
+}
+
+.footer-info .rights .country {
+    display: flex; 
+    cursor: pointer;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+    transition: all 350ms ease;
+}
+
+.footer-info .rights .country:hover {
+    color: #12c739;
+}
+
+.footer-info .rights .country .brasil-flag {
+    padding-right: 10px;
+    height: 12px;
+    width: auto;
+    display: inline-block;
 }
